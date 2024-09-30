@@ -34,6 +34,8 @@ class AppearanceSettingsTableViewController: OWSTableViewController2 {
             let vc = ThemeSettingsTableViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         })
+        // MARK: - Remove Chat Customization Options.
+        /*
         firstSection.add(OWSTableItem.disclosureItem(
             withText: OWSLocalizedString(
                 "SETTINGS_ITEM_COLOR_AND_WALLPAPER",
@@ -44,6 +46,7 @@ class AppearanceSettingsTableViewController: OWSTableViewController2 {
             let vc = ColorAndWallpaperSettingsViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         })
+         */
         firstSection.add(
             OWSTableItem(
                 customCellBlock: { [weak self] in

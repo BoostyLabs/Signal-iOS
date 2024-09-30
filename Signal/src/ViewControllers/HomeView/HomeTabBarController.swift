@@ -26,10 +26,12 @@ class HomeTabBarController: UITabBarController {
     // No need to share spoiler render state across the whole app.
     lazy var storiesViewController = StoriesViewController(spoilerState: SpoilerRenderState())
     lazy var storiesNavController = OWSNavigationController(rootViewController: storiesViewController)
+    // TODO: - doc added
+    let image = Theme.iconImage(.settingsPayments)
     lazy var storiesTabBarItem = UITabBarItem(
-        title: OWSLocalizedString("STORIES_TITLE", comment: "Title for the stories view."),
-        image: UIImage(named: "tab-stories"),
-        selectedImage: UIImage(named: "tab-stories")
+        title: OWSLocalizedString("SETTINGS_PAYMENTS_TITLE", comment: "Label for the 'payments' section of the app."),
+        image: image,
+        selectedImage: image
     )
 
     lazy var callsListViewController = CallsListViewController()

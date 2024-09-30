@@ -50,7 +50,10 @@ extension ConversationSettingsViewController {
         // Main section.
         addDisappearingMessagesItem(to: mainSection)
         addNicknameItemIfNecessary(to: mainSection)
+        // MARK: - Remove Chat Customization Options.
+        /*
         addColorAndWallpaperSettingsItem(to: mainSection)
+         */
         if !isNoteToSelf { addSoundAndNotificationSettingsItem(to: mainSection) }
         addSafetyNumberItemIfNecessary(to: mainSection)
 

@@ -174,14 +174,15 @@ class AppSettingsViewController: OWSTableViewController2 {
         contents.add(section1)
 
         let section2 = OWSTableSection()
-        section2.add(.disclosureItem(
+        // MARK: - Remove Chat Customization Options
+        /*section2.add(.disclosureItem(
             icon: .settingsAppearance,
             withText: OWSLocalizedString("SETTINGS_APPEARANCE_TITLE", comment: "The title for the appearance settings."),
             actionBlock: { [weak self] in
                 let vc = AppearanceSettingsTableViewController()
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
-        ))
+        ))*/
         section2.add(.disclosureItem(
             icon: .settingsChats,
             withText: OWSLocalizedString("SETTINGS_CHATS", comment: "Title for the 'chats' link in settings."),
